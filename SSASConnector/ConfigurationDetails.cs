@@ -95,7 +95,7 @@ namespace SSASConnector
                             SharpCloudAttribute sharpcloudAttribute = new SharpCloudAttribute();
                             sharpcloudAttribute.CubeMemberName = settingComponents[0];
                             sharpcloudAttribute.SharpCloudAttributeName = settingComponents[1];
-                            if (settingComponents[2].ToUpper() != "NUMERIC" && settingComponents[2].ToUpper() != "LIST" && settingComponents[2].ToUpper() != "TEXT")
+                            if (settingComponents[2].ToUpper() != "NUMERIC" && settingComponents[2].ToUpper() != "LIST" && settingComponents[2].ToUpper() != "TEXT" && settingComponents[2].ToUpper() != "DATE")
                             {
                                 //
                                 HelperFunctions.WriteToEventLog(string.Format("Error reading configuation file for member:{0}, unrecognised data type:{1}", sharpcloudAttribute.CubeMemberName, sharpcloudAttribute.AttributeDataType));
